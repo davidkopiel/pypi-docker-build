@@ -1,0 +1,8 @@
+version: 1
+type: pip
+resolver:
+    repo: davidko-pypi
+    serverId: idaniread
+deployer:
+    repo: davidko-pypi
+    serverId: idaniread
