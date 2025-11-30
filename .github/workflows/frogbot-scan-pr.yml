@@ -33,10 +33,11 @@ jobs:
           # [Mandatory if the two conditions below are met]
           # 1. The project uses npm, yarn 2, NuGet or .NET to download its dependencies
           # 2. The `installCommand` variable isn't set in your frogbot-config.yml file.
-          #
+          JFROG_CLI_LOG_LEVEL: DEBUG
           # The command that installs the project dependencies (e.g "npm i", "nuget restore" or "dotnet restore")
           # JF_INSTALL_DEPS_CMD: ""
           # [Mandatory]
+          JE_FAIL: true
           # JFrog platform URL
           JF_URL: ${{ secrets.JF_URL }}
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
