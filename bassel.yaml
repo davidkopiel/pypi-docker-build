@@ -1,0 +1,6 @@
+- route:
+    id: test-sftp-route
+    from:
+      uri: "direct:start"
+    to:
+      uri: "sftp://example.com/incoming?username=testuser&privateKeyFile=/path/to/privateKey&privateKeyPassphrase=RAW({{srcSftpPrivateKeyPassphrase}})"
