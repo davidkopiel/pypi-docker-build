@@ -30,6 +30,8 @@ jobs:
         with:
           version: 2.27.0
         env:
+
+          JF_PR_SHOW_SECRETS_COMMENTS: true 
           # [Mandatory if the two conditions below are met]
           # 1. The project uses npm, yarn 2, NuGet or .NET to download its dependencies
           # 2. The `installCommand` variable isn't set in your frogbot-config.yml file.
